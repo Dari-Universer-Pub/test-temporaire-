@@ -1,0 +1,118 @@
+{
+ "description": "Coffre, caisse, malle : caisse, couvercle bombe, ferrures, serrure.",
+ "reglages": {
+  "bois": "#8a5a36",
+  "metal": "#8e9aa8",
+  "largeur": 0.6,
+  "hauteur": 0.3
+ },
+ "operations": [
+  {
+   "faire": "piece",
+   "nom": "caisse",
+   "forme": "bloc",
+   "dimensions": [
+    "$largeur",
+    0.4,
+    "$hauteur"
+   ],
+   "arrondi": 0.06,
+   "couleur": "$bois"
+  },
+  {
+   "faire": "placer",
+   "quoi": "caisse",
+   "a": [
+    0,
+    0,
+    0.15
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "couvercle",
+   "forme": "masse",
+   "dimensions": [
+    0.62,
+    0.42,
+    0.2
+   ],
+   "couleur": "$bois"
+  },
+  {
+   "faire": "placer",
+   "quoi": "couvercle",
+   "a": [
+    0,
+    0,
+    0.31
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "ferrure_g",
+   "forme": "bloc",
+   "dimensions": [
+    0.05,
+    0.43,
+    0.36
+   ],
+   "arrondi": 0.2,
+   "couleur": "$metal",
+   "matiere": "metal"
+  },
+  {
+   "faire": "placer",
+   "quoi": "ferrure_g",
+   "a": [
+    0.2,
+    0,
+    0.2
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "ferrure_d",
+   "forme": "bloc",
+   "dimensions": [
+    0.05,
+    0.43,
+    0.36
+   ],
+   "arrondi": 0.2,
+   "couleur": "$metal",
+   "matiere": "metal"
+  },
+  {
+   "faire": "placer",
+   "quoi": "ferrure_d",
+   "a": [
+    -0.2,
+    0,
+    0.2
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "serrure",
+   "forme": "bloc",
+   "dimensions": [
+    0.08,
+    0.04,
+    0.09
+   ],
+   "arrondi": 0.2,
+   "couleur": "#c9a23a",
+   "matiere": "metal"
+  },
+  {
+   "faire": "placer",
+   "quoi": "serrure",
+   "a": [
+    0,
+    0.21,
+    0.27
+   ]
+  }
+ ]
+}

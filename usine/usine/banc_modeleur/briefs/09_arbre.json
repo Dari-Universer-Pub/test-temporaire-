@@ -1,0 +1,16 @@
+{
+ "id": "09_arbre",
+ "_famille": "vegetal",
+ "_brief": "Arbre feuillu.",
+ "modelage": {
+  "gabarit": "arbre"
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 64,
+ "_galerie": "decors"
+}

@@ -1,0 +1,132 @@
+{
+ "description": "Maison, cabane, tour basse : murs, toit a deux pans, porte, fenetre, cheminee.",
+ "reglages": {
+  "largeur": 0.7,
+  "profondeur": 0.55,
+  "hauteur": 0.45,
+  "toit": 0.32,
+  "mur": "#c9b08a",
+  "couleur_toit": "#8a3a2e",
+  "porte": "#5a3a26"
+ },
+ "operations": [
+  {
+   "faire": "piece",
+   "nom": "murs",
+   "forme": "bloc",
+   "dimensions": [
+    "$largeur",
+    "$profondeur",
+    "$hauteur"
+   ],
+   "arrondi": 0.04,
+   "couleur": "$mur",
+   "matiere": "rugueux"
+  },
+  {
+   "faire": "placer",
+   "quoi": "murs",
+   "a": [
+    0,
+    0,
+    0.225
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "toit",
+   "forme": "lame",
+   "contour": [
+    [
+     -0.4,
+     0
+    ],
+    [
+     0.4,
+     0
+    ],
+    [
+     0,
+     "$toit"
+    ]
+   ],
+   "epaisseur": 0.6,
+   "couleur": "$couleur_toit",
+   "lisse": 0
+  },
+  {
+   "faire": "placer",
+   "quoi": "toit",
+   "a": [
+    0,
+    0,
+    0.61
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "porte",
+   "forme": "bloc",
+   "dimensions": [
+    0.14,
+    0.04,
+    0.24
+   ],
+   "arrondi": 0.1,
+   "couleur": "$porte"
+  },
+  {
+   "faire": "placer",
+   "quoi": "porte",
+   "a": [
+    0.12,
+    0.28,
+    0.12
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "fenetre",
+   "forme": "bloc",
+   "dimensions": [
+    0.12,
+    0.04,
+    0.1
+   ],
+   "arrondi": 0.1,
+   "couleur": "#3a5a7a",
+   "matiere": "brillant"
+  },
+  {
+   "faire": "placer",
+   "quoi": "fenetre",
+   "a": [
+    -0.16,
+    0.28,
+    0.27
+   ]
+  },
+  {
+   "faire": "piece",
+   "nom": "cheminee",
+   "forme": "bloc",
+   "dimensions": [
+    0.09,
+    0.09,
+    0.22
+   ],
+   "arrondi": 0.05,
+   "couleur": "#7a6a62",
+   "matiere": "rugueux"
+  },
+  {
+   "faire": "placer",
+   "quoi": "cheminee",
+   "a": [
+    -0.2,
+    -0.08,
+    0.66
+   ]
+  }
+ ]
+}

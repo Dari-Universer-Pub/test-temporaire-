@@ -1,0 +1,39 @@
+{
+ "description": "Arbre, buisson, corail, bois de cerf, racines (ramification) + feuillage en masses. Sans feuilles (corail, arbre mort) : \"feuilles\": 0.",
+ "reglages": {
+  "longueur": 0.42,
+  "rayon": 0.055,
+  "niveaux": 3,
+  "branches": 3,
+  "angle": 38,
+  "graine": 1,
+  "couleur": "#6e5040",
+  "feuillage": "#4f8a3a",
+  "feuilles": 0.09
+ },
+ "operations": [
+  {
+   "faire": "corps",
+   "nom": "arbre",
+   "couleur": "$couleur",
+   "ramifier": {
+    "depuis": [
+     0,
+     0,
+     0
+    ],
+    "longueur": "$longueur",
+    "rayon": "$rayon",
+    "niveaux": "$niveaux",
+    "branches": "$branches",
+    "angle": "$angle",
+    "graine": "$graine"
+   },
+   "feuillage": {
+    "couleur": "$feuillage",
+    "rayon": "$feuilles"
+   },
+   "matiere": "rugueux"
+  }
+ ]
+}

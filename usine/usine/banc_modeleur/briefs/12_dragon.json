@@ -1,0 +1,16 @@
+{
+ "id": "12_dragon",
+ "_famille": "volant (ailes)",
+ "_brief": "Dragon : quatre pattes, deux ailes, longue queue.",
+ "modelage": {
+  "gabarit": "dragon"
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 64,
+ "_galerie": "creatures"
+}

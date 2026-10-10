@@ -1,0 +1,17 @@
+{
+ "id": "01_villageois",
+ "_famille": "humanoide",
+ "_brief": "Villageois ordinaire : chemise, pantalon, bottes.",
+ "modelage": {
+  "gabarit": "humanoide"
+ },
+ "animations": {
+  "debout": {
+   "action": "debout",
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 56,
+ "_galerie": "personnages"
+}

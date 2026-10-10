@@ -1,0 +1,16 @@
+{
+ "id": "07_coffre",
+ "_famille": "objet rigide",
+ "_brief": "Coffre au tresor : bois, ferrures.",
+ "modelage": {
+  "gabarit": "coffre"
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 40,
+ "_galerie": "decors"
+}

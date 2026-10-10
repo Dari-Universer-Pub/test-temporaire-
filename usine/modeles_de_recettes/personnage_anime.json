@@ -1,0 +1,3 @@
+{"id": "CHANGE_MOI", "modele": "modeles/CHANGE_MOI/source/FICHIER",
+ "animations": {"attente": {"action": "Idle", "images": 4}, "marche": {"action": "Walk", "images": 8},
+                "attaque": {"action": "Attack", "images": 6}}}

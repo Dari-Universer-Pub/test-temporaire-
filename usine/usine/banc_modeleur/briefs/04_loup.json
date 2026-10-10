@@ -1,0 +1,21 @@
+{
+ "id": "04_loup",
+ "_famille": "quadrupede",
+ "_brief": "Loup gris, museau long, queue fournie.",
+ "modelage": {
+  "gabarit": "quadrupede",
+  "reglages": {
+   "couleur": "#6a6a72",
+   "museau": 0.07,
+   "queue": 0.035
+  }
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "cote",
+ "taille_px": 56,
+ "_galerie": "creatures"
+}

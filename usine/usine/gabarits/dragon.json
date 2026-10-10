@@ -1,0 +1,493 @@
+{
+ "description": "Volant a quatre pattes et deux ailes (dragon, griffon, chauve-souris geante). Base quadrupede + ailes a charniere (os 'aile_d', 'aile_g' : animation {\"aile_d\": {\"ouvrir\": deg}}). Reglages : envergure, ailes (couleur des membranes). Animation 'vol' incluse (battement d'ailes, reglage 'battement' en degres) : \"animations\": {\"vol\": {\"action\": \"vol\", \"images\": 8}}.",
+ "reglages": {
+  "carrure": 1.0,
+  "pattes": 1.0,
+  "museau": 0.06,
+  "queue": 0.012,
+  "couleur": "#3f7a4a",
+  "ailes": "#7a3a2a",
+  "cornes": "#e8dcc0",
+  "battement": 35
+ },
+ "operations": [
+  {
+   "faire": "corps",
+   "nom": "corps",
+   "couleur": "$couleur",
+   "epaisseurs": {
+    "colonne": "$carrure",
+    "cou_tete": "$carrure",
+    "patte_av_g": "$pattes",
+    "patte_av_d": "$pattes",
+    "patte_ar_g": "$pattes",
+    "patte_ar_d": "$pattes"
+   },
+   "lignes": [
+    {
+     "famille": "colonne",
+     "points": [
+      [
+       0,
+       -0.26,
+       0.42000000000000004
+      ],
+      [
+       0,
+       -0.06,
+       0.43000000000000005
+      ],
+      [
+       0,
+       0.12,
+       0.44
+      ],
+      [
+       0,
+       0.24,
+       0.47000000000000003
+      ]
+     ],
+     "rayons": [
+      0.13,
+      0.15,
+      0.16,
+      0.13
+     ]
+    },
+    {
+     "famille": "cou_tete",
+     "points": [
+      [
+       0,
+       0.26,
+       0.49
+      ],
+      [
+       0,
+       0.34,
+       0.6000000000000001
+      ],
+      [
+       0,
+       0.4,
+       0.7
+      ],
+      [
+       0,
+       0.5,
+       0.73
+      ],
+      [
+       0,
+       0.6,
+       0.71
+      ],
+      [
+       0,
+       0.72,
+       0.67
+      ]
+     ],
+     "rayons": [
+      0.1,
+      0.075,
+      0.065,
+      0.075,
+      0.06,
+      "$museau"
+     ]
+    },
+    {
+     "famille": "queue",
+     "points": [
+      [
+       0,
+       -0.3,
+       0.42000000000000004
+      ],
+      [
+       0,
+       -0.48,
+       0.38
+      ],
+      [
+       0,
+       -0.66,
+       0.30000000000000004
+      ],
+      [
+       0,
+       -0.82,
+       0.28
+      ],
+      [
+       0,
+       -0.95,
+       0.34
+      ]
+     ],
+     "rayons": [
+      0.1,
+      0.075,
+      0.05,
+      0.035,
+      "$queue"
+     ]
+    },
+    {
+     "famille": "patte_av_g",
+     "points": [
+      [
+       0.11000000000000001,
+       0.2,
+       0.42000000000000004
+      ],
+      [
+       0.125,
+       0.2,
+       0.2
+      ],
+      [
+       0.12,
+       0.24,
+       0.08
+      ],
+      [
+       0.12,
+       0.3,
+       0.03
+      ]
+     ],
+     "rayons": [
+      0.11,
+      0.075,
+      0.055,
+      0.065
+     ]
+    },
+    {
+     "famille": "patte_av_d",
+     "points": [
+      [
+       -0.11000000000000001,
+       0.2,
+       0.42000000000000004
+      ],
+      [
+       -0.125,
+       0.2,
+       0.2
+      ],
+      [
+       -0.12,
+       0.24,
+       0.08
+      ],
+      [
+       -0.12,
+       0.3,
+       0.03
+      ]
+     ],
+     "rayons": [
+      0.11,
+      0.075,
+      0.055,
+      0.065
+     ]
+    },
+    {
+     "famille": "patte_ar_g",
+     "points": [
+      [
+       0.11000000000000001,
+       -0.2,
+       0.42000000000000004
+      ],
+      [
+       0.13,
+       -0.1,
+       0.24
+      ],
+      [
+       0.12,
+       -0.24,
+       0.14
+      ],
+      [
+       0.12,
+       -0.18,
+       0.03
+      ]
+     ],
+     "rayons": [
+      0.135,
+      0.085,
+      0.05,
+      0.065
+     ]
+    },
+    {
+     "famille": "patte_ar_d",
+     "points": [
+      [
+       -0.11000000000000001,
+       -0.2,
+       0.42000000000000004
+      ],
+      [
+       -0.13,
+       -0.1,
+       0.24
+      ],
+      [
+       -0.12,
+       -0.24,
+       0.14
+      ],
+      [
+       -0.12,
+       -0.18,
+       0.03
+      ]
+     ],
+     "rayons": [
+      0.135,
+      0.085,
+      0.05,
+      0.065
+     ]
+    }
+   ],
+   "matiere": "brillant"
+  },
+  {
+   "faire": "piece",
+   "nom": "aile",
+   "forme": "lame",
+   "contour": [
+    [
+     0,
+     0
+    ],
+    [
+     0.1,
+     0.3
+    ],
+    [
+     0.3,
+     0.58
+    ],
+    [
+     0.55,
+     0.68
+    ],
+    [
+     0.78,
+     0.5
+    ],
+    [
+     0.62,
+     0.36
+    ],
+    [
+     0.6,
+     0.14
+    ],
+    [
+     0.44,
+     0.2
+    ],
+    [
+     0.34,
+     0.02
+    ],
+    [
+     0.2,
+     0.08
+    ],
+    [
+     0.08,
+     -0.06
+    ]
+   ],
+   "epaisseur": 0.012,
+   "couleur": "$ailes",
+   "matiere": "peau"
+  },
+  {
+   "faire": "poser",
+   "quoi": "aile",
+   "sur": "corps",
+   "point": [
+    0.05,
+    0.08,
+    0.56
+   ],
+   "cote": "haut",
+   "enfoncer": 0.02,
+   "haut_vers": [
+    0.9,
+    -0.2,
+    1
+   ]
+  },
+  {
+   "faire": "charniere",
+   "quoi": "aile",
+   "nom": "aile_d",
+   "bord": "gauche-bas",
+   "axe": "avant",
+   "ouvre_vers": "haut",
+   "segments": 3
+  },
+  {
+   "faire": "symetriser",
+   "quoi": "aile",
+   "nom": "aile_g"
+  },
+  {
+   "faire": "charniere",
+   "quoi": "aile_g",
+   "nom": "aile_gauche",
+   "bord": "droite-bas",
+   "axe": "avant",
+   "ouvre_vers": "haut",
+   "segments": 3
+  },
+  {
+   "faire": "piece",
+   "nom": "corne",
+   "forme": "tour",
+   "hauteur": 0.1,
+   "rayon": 0.02,
+   "profil": [
+    [
+     0,
+     1
+    ],
+    [
+     0.6,
+     0.6
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "couleur": "$cornes",
+   "matiere": "brillant"
+  },
+  {
+   "faire": "poser",
+   "quoi": "corne",
+   "sur": "corps",
+   "point": [
+    0.03,
+    0.5,
+    0.8
+   ],
+   "cote": "haut",
+   "haut_vers": [
+    0.3,
+    -0.6,
+    1
+   ],
+   "symetrique": true,
+   "enfoncer": 0.01
+  },
+  {
+   "faire": "animation",
+   "nom": "vol",
+   "images": 8,
+   "cles": [
+    {
+     "t": 0,
+     "os": {
+      "aile_d": {
+       "ouvrir": "$battement",
+       "replier": 0
+      },
+      "aile_gauche": {
+       "ouvrir": "$battement",
+       "replier": 0
+      }
+     }
+    },
+    {
+     "t": 0.5,
+     "os": {
+      "aile_d": {
+       "ouvrir": -30,
+       "replier": -10
+      },
+      "aile_gauche": {
+       "ouvrir": -30,
+       "replier": -10
+      }
+     }
+    },
+    {
+     "t": 0.75,
+     "os": {
+      "aile_d": {
+       "ouvrir": 10,
+       "replier": 35
+      },
+      "aile_gauche": {
+       "ouvrir": 10,
+       "replier": 35
+      }
+     }
+    },
+    {
+     "t": 1,
+     "os": {
+      "aile_d": {
+       "ouvrir": "$battement",
+       "replier": 0
+      },
+      "aile_gauche": {
+       "ouvrir": "$battement",
+       "replier": 0
+      }
+     }
+    }
+   ]
+  },
+  {
+   "faire": "animation",
+   "nom": "repos",
+   "images": 1,
+   "cles": [
+    {
+     "t": 0,
+     "os": {
+      "aile_d": {
+       "ouvrir": -15,
+       "replier": 55
+      },
+      "aile_gauche": {
+       "ouvrir": -15,
+       "replier": 55
+      }
+     }
+    },
+    {
+     "t": 1,
+     "os": {
+      "aile_d": {
+       "ouvrir": -15,
+       "replier": 55
+      },
+      "aile_gauche": {
+       "ouvrir": -15,
+       "replier": 55
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,673 @@
+{
+ "description": "Humanoide (humain, elfe, nain, chevalier, zombie...). Squelette de la bibliotheque d'animations : marche, course, nage, attaques s'y branchent (\"animations_depuis\" dans la recette de fabriquer). Tenue par zones : couleur (peau), haut, bas, gants, bottes, ceinture (mets la meme couleur pour une piece unie).",
+ "reglages": {
+  "carrure": 1.0,
+  "membres": 1.0,
+  "tete": 1.0,
+  "mains": 0.1,
+  "pieds": 0.095,
+  "couleur": "#c08a64",
+  "haut": "#56708f",
+  "bas": "#4c4038",
+  "gants": "#6e4a2c",
+  "bottes": "#3a2e27",
+  "ceinture": "#9a7438",
+  "ecart_jambes": 0.025,
+  "yeux": "#1c1a24",
+  "matiere_tenue": "tissu"
+ },
+ "operations": [
+  {
+   "faire": "corps",
+   "nom": "corps",
+   "squelette_bibliotheque": "humanoide_squelette.glb",
+   "couleur": "$couleur",
+   "epaisseurs": {
+    "tronc": "$carrure",
+    "tete": "$tete",
+    "bras_l": "$membres",
+    "bras_r": "$membres",
+    "jambe_l": "$membres",
+    "jambe_r": "$membres"
+   },
+   "lignes": [
+    {
+     "famille": "tronc",
+     "points": [
+      {
+       "os": "pelvis",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0.02
+       ]
+      },
+      {
+       "os": "spine_02",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "spine_03",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "spine_03",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        -0.07
+       ]
+      },
+      {
+       "os": "Head",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "rayons": [
+      0.165,
+      0.15,
+      0.205,
+      0.205,
+      0.088
+     ]
+    },
+    {
+     "famille": "tete",
+     "points": [
+      {
+       "os": "Head",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "Head",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        0.09
+       ]
+      }
+     ],
+     "rayons": [
+      0.118,
+      0.132
+     ]
+    },
+    {
+     "famille": "bras_l",
+     "points": [
+      {
+       "os": "spine_03",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        -0.07
+       ]
+      },
+      {
+       "os": "upperarm_l",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "lowerarm_l",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "hand_l",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "hand_l",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "rayons": [
+      0.112,
+      0.1,
+      0.084,
+      0.074,
+      "$mains"
+     ]
+    },
+    {
+     "famille": "jambe_l",
+     "points": [
+      {
+       "os": "pelvis",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0.0
+       ]
+      },
+      {
+       "os": "thigh_l",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        -0.03
+       ],
+       "ecarter": "$ecart_jambes"
+      },
+      {
+       "os": "calf_l",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ],
+       "ecarter": "$ecart_jambes"
+      },
+      {
+       "os": "foot_l",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0.02
+       ],
+       "ecarter": "$ecart_jambes"
+      },
+      {
+       "os": "ball_l",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        0.03
+       ],
+       "ecarter": "$ecart_jambes"
+      }
+     ],
+     "rayons": [
+      0.08,
+      0.108,
+      0.084,
+      0.072,
+      "$pieds"
+     ]
+    },
+    {
+     "famille": "bras_r",
+     "points": [
+      {
+       "os": "spine_03",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        -0.07
+       ]
+      },
+      {
+       "os": "upperarm_r",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "lowerarm_r",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "hand_r",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "os": "hand_r",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "rayons": [
+      0.112,
+      0.1,
+      0.084,
+      0.074,
+      "$mains"
+     ]
+    },
+    {
+     "famille": "jambe_r",
+     "points": [
+      {
+       "os": "pelvis",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0.0
+       ]
+      },
+      {
+       "os": "thigh_r",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        -0.03
+       ],
+       "ecarter": "$ecart_jambes"
+      },
+      {
+       "os": "calf_r",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0
+       ],
+       "ecarter": "$ecart_jambes"
+      },
+      {
+       "os": "foot_r",
+       "bout": "tete",
+       "decalage": [
+        0,
+        0,
+        0.02
+       ],
+       "ecarter": "$ecart_jambes"
+      },
+      {
+       "os": "ball_r",
+       "bout": "queue",
+       "decalage": [
+        0,
+        0,
+        0.03
+       ],
+       "ecarter": "$ecart_jambes"
+      }
+     ],
+     "rayons": [
+      0.08,
+      0.108,
+      0.084,
+      0.072,
+      "$pieds"
+     ]
+    }
+   ],
+   "tenue": [
+    {
+     "os": [
+      "spine",
+      "clavicle",
+      "upperarm",
+      "lowerarm"
+     ],
+     "couleur": "$haut"
+    },
+    {
+     "os": [
+      "pelvis",
+      "thigh"
+     ],
+     "couleur": "$bas"
+    },
+    {
+     "os": [
+      "spine_01"
+     ],
+     "couleur": "$ceinture"
+    },
+    {
+     "os": [
+      "hand"
+     ],
+     "couleur": "$gants"
+    },
+    {
+     "os": [
+      "calf",
+      "foot",
+      "ball"
+     ],
+     "couleur": "$bottes"
+    }
+   ],
+   "matiere": "peau",
+   "matiere_tenue": "$matiere_tenue"
+  },
+  {
+   "faire": "corps",
+   "nom": "yeux",
+   "piece": true,
+   "couleur": "$yeux",
+   "k_rayon": 1.0,
+   "lisse": 0,
+   "lignes": [
+    {
+     "famille": "oeil_g",
+     "points": [
+      {
+       "os": "Head",
+       "bout": "tete",
+       "decalage": [
+        -0.035,
+        0.045,
+        0.08
+       ]
+      }
+     ],
+     "rayons": [
+      0.034
+     ]
+    },
+    {
+     "famille": "oeil_d",
+     "points": [
+      {
+       "os": "Head",
+       "bout": "tete",
+       "decalage": [
+        0.035,
+        0.045,
+        0.08
+       ]
+      }
+     ],
+     "rayons": [
+      0.034
+     ]
+    }
+   ],
+   "matiere": "brillant"
+  },
+  {
+   "faire": "animation",
+   "nom": "debout",
+   "images": 1,
+   "cles": [
+    {
+     "t": 0,
+     "os": {
+      "upperarm_l": {
+       "vers": [
+        -0.28,
+        0.05,
+        -1
+       ]
+      },
+      "upperarm_r": {
+       "vers": [
+        0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_l": {
+       "vers": [
+        -0.15,
+        0.25,
+        -1
+       ]
+      },
+      "lowerarm_r": {
+       "vers": [
+        0.15,
+        0.25,
+        -1
+       ]
+      }
+     }
+    },
+    {
+     "t": 1,
+     "os": {
+      "upperarm_l": {
+       "vers": [
+        -0.28,
+        0.05,
+        -1
+       ]
+      },
+      "upperarm_r": {
+       "vers": [
+        0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_l": {
+       "vers": [
+        -0.15,
+        0.25,
+        -1
+       ]
+      },
+      "lowerarm_r": {
+       "vers": [
+        0.15,
+        0.25,
+        -1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "faire": "animation",
+   "nom": "attaque",
+   "images": 8,
+   "anticipation": 0.3,
+   "cles": [
+    {
+     "t": 0,
+     "os": {
+      "upperarm_l": {
+       "vers": [
+        -0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_l": {
+       "vers": [
+        -0.15,
+        0.25,
+        -1
+       ]
+      },
+      "upperarm_r": {
+       "vers": [
+        0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_r": {
+       "vers": [
+        0.15,
+        0.25,
+        -1
+       ]
+      }
+     },
+     "racine": {
+      "avant": 0,
+      "tourner": 0
+     }
+    },
+    {
+     "t": 0.4,
+     "os": {
+      "upperarm_l": {
+       "vers": [
+        -0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_l": {
+       "vers": [
+        -0.15,
+        0.25,
+        -1
+       ]
+      },
+      "upperarm_r": {
+       "vers": [
+        0.2,
+        -0.4,
+        1
+       ]
+      },
+      "lowerarm_r": {
+       "vers": [
+        0.1,
+        -0.6,
+        1
+       ]
+      }
+     },
+     "racine": {
+      "avant": -0.03,
+      "tourner": -15
+     }
+    },
+    {
+     "t": 0.55,
+     "os": {
+      "upperarm_l": {
+       "vers": [
+        -0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_l": {
+       "vers": [
+        -0.15,
+        0.25,
+        -1
+       ]
+      },
+      "upperarm_r": {
+       "vers": [
+        0.1,
+        1,
+        -0.3
+       ]
+      },
+      "lowerarm_r": {
+       "vers": [
+        0.05,
+        1,
+        -0.6
+       ]
+      }
+     },
+     "racine": {
+      "avant": 0.06,
+      "tourner": 20,
+      "ecraser": 0.08
+     },
+     "tenir": 0.2
+    },
+    {
+     "t": 1,
+     "os": {
+      "upperarm_l": {
+       "vers": [
+        -0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_l": {
+       "vers": [
+        -0.15,
+        0.25,
+        -1
+       ]
+      },
+      "upperarm_r": {
+       "vers": [
+        0.28,
+        0.05,
+        -1
+       ]
+      },
+      "lowerarm_r": {
+       "vers": [
+        0.15,
+        0.25,
+        -1
+       ]
+      }
+     },
+     "racine": {
+      "avant": 0,
+      "tourner": 0
+     }
+    }
+   ]
+  }
+ ]
+}

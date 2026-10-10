@@ -1,0 +1,81 @@
+{
+ "id": "02_plongeur",
+ "_famille": "humanoide + pieces",
+ "_brief": "Scaphandrier : casque rond en laiton, bouteille dans le dos, combinaison epaisse.",
+ "modelage": {
+  "gabarit": "humanoide",
+  "reglages": {
+   "carrure": 1.15,
+   "membres": 1.2,
+   "haut": "#b5452e",
+   "bas": "#b5452e",
+   "gants": "#5e3a4e",
+   "bottes": "#3b3b48",
+   "ceinture": "#3b3b48"
+  },
+  "operations": [
+   {
+    "faire": "piece",
+    "nom": "casque",
+    "forme": "masse",
+    "couleur": "#d0a040",
+    "matiere": "metal"
+   },
+   {
+    "faire": "englober",
+    "quoi": "casque",
+    "zone": "tete",
+    "marge": 0.45
+   },
+   {
+    "faire": "piece",
+    "nom": "bouteille",
+    "forme": "tour",
+    "hauteur": 0.3,
+    "rayon": 0.05,
+    "profil": [
+     [
+      0,
+      0
+     ],
+     [
+      0.03,
+      0.9
+     ],
+     [
+      0.08,
+      1
+     ],
+     [
+      0.82,
+      1
+     ],
+     [
+      0.92,
+      0.7
+     ],
+     [
+      1,
+      0.3
+     ]
+    ],
+    "couleur": "#8e9aa8",
+    "matiere": "metal"
+   },
+   {
+    "faire": "poser",
+    "quoi": "bouteille",
+    "zone": "dos"
+   }
+  ]
+ },
+ "animations": {
+  "debout": {
+   "action": "debout",
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 56,
+ "_galerie": "personnages"
+}

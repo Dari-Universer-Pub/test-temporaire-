@@ -1,0 +1,2 @@
+{"id": "CHANGE_MOI", "modele": "modeles/CHANGE_MOI/source/FICHIER", "taille_px": 16, "taille_selon": "max",
+ "animations": {"tourne": {"procedural": "rotation", "images": 8}}}

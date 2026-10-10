@@ -1,0 +1,54 @@
+{
+ "id": "03_chevalier",
+ "_famille": "humanoide + pieces",
+ "_brief": "Chevalier en armure : metal, casque, brassards.",
+ "modelage": {
+  "gabarit": "humanoide",
+  "reglages": {
+   "carrure": 1.2,
+   "haut": "#8e9aa8",
+   "bas": "#5a6070",
+   "gants": "#8e9aa8",
+   "bottes": "#5a6070",
+   "ceinture": "#8a5a36",
+   "matiere_tenue": "metal"
+  },
+  "operations": [
+   {
+    "faire": "piece",
+    "nom": "casque",
+    "forme": "masse",
+    "couleur": "#a8b0bc",
+    "matiere": "metal"
+   },
+   {
+    "faire": "englober",
+    "quoi": "casque",
+    "zone": "tete",
+    "marge": 0.25
+   },
+   {
+    "faire": "piece",
+    "nom": "brassard",
+    "forme": "masse",
+    "couleur": "#a8b0bc",
+    "matiere": "metal"
+   },
+   {
+    "faire": "englober",
+    "quoi": "brassard",
+    "zone": "avant_bras_d",
+    "marge": 0.3
+   }
+  ]
+ },
+ "animations": {
+  "debout": {
+   "action": "debout",
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 56,
+ "_galerie": "personnages"
+}

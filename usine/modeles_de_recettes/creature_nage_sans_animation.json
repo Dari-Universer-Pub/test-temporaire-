@@ -1,0 +1,2 @@
+{"id": "CHANGE_MOI", "modele": "modeles/CHANGE_MOI/source/FICHIER", "taille_selon": "largeur",
+ "animations": {"nage": {"procedural": "onde", "images": 8, "force": 1.0}}}

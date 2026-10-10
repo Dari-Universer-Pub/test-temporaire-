@@ -1,0 +1,9 @@
+{
+ "_note": "Style commun a TOUS les assets du projet. Copie ce fichier a la racine du projet et regle-le UNE fois.",
+ "palette": "auto",
+ "vue": "cote",
+ "taille_px": 32,
+ "taille_selon": "hauteur",
+ "contour": "selectif",
+ "fonds_planche": ["#3a8fb7", "#14182a", "#cfcfcf"]
+}

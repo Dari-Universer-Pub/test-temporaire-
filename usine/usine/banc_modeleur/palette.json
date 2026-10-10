@@ -1,0 +1,105 @@
+{
+  "_note": "Palette commune du jeu (LES CLOCHES DE VAREKH). Rampes du plus sombre (ombre, teinte froide) au plus clair (lumiere, teinte chaude). Pas de noir pur.",
+  "rampes": {
+    "peau": [
+      "#3b2440",
+      "#5e3a4e",
+      "#8a5560",
+      "#b5776a",
+      "#d99a7a",
+      "#f2c79a"
+    ],
+    "combinaison": [
+      "#3d1d3f",
+      "#7a2f3a",
+      "#b5452e",
+      "#e0743a",
+      "#f5a24e",
+      "#ffd27a"
+    ],
+    "eau": [
+      "#0d1640",
+      "#1b2c6b",
+      "#245c9a",
+      "#2f8fb0",
+      "#5cc4c8",
+      "#a6e8dc"
+    ],
+    "verre": [
+      "#1f3a60",
+      "#2e4f7a",
+      "#5b8fb5",
+      "#9ccfe6",
+      "#d4f2f4"
+    ],
+    "metal": [
+      "#1f2433",
+      "#3a4458",
+      "#5f6b7f",
+      "#8e9aa8",
+      "#c9c6c0",
+      "#ebe6da"
+    ],
+    "roche": [
+      "#201a2e",
+      "#3b3050",
+      "#5d4b5e",
+      "#846a6e",
+      "#ad8f7f",
+      "#d1b594"
+    ],
+    "algue": [
+      "#0e2b2a",
+      "#1a4f44",
+      "#2a7a55",
+      "#4aa35e",
+      "#8ccc6a",
+      "#d6e88a"
+    ],
+    "corail": [
+      "#3a1a3e",
+      "#6e2a5a",
+      "#a8447a",
+      "#e0607a",
+      "#f59a8a",
+      "#ffc9b0"
+    ],
+    "sable": [
+      "#4a3a3e",
+      "#6e5650",
+      "#8a7060",
+      "#b89a74",
+      "#dcc08f",
+      "#f5e0b0"
+    ],
+    "lampe": [
+      "#ff7a3a",
+      "#ff9a3c",
+      "#ffb347",
+      "#ffd98a",
+      "#fff3cc"
+    ],
+    "sang_encre": [
+      "#1f0816",
+      "#2a0a22",
+      "#5a1236",
+      "#9a1f4a",
+      "#c8354f"
+    ],
+    "bois_radeau": [
+      "#2e1f1a",
+      "#4f3526",
+      "#7a5536",
+      "#a87a4c",
+      "#cfa46c",
+      "#ead0a0"
+    ],
+    "bulle": [
+      "#25506e",
+      "#3a7f9a",
+      "#6fb7c9",
+      "#b4e5e6",
+      "#e6fbfb"
+    ]
+  }
+}

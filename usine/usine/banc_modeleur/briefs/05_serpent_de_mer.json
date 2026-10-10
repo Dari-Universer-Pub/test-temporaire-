@@ -1,0 +1,20 @@
+{
+ "id": "05_serpent_de_mer",
+ "_famille": "serpent",
+ "_brief": "Serpent de mer vert, long et epais.",
+ "modelage": {
+  "gabarit": "serpent",
+  "reglages": {
+   "epaisseur": 1.3,
+   "couleur": "#2f8f6a"
+  }
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 56,
+ "_galerie": "creatures"
+}

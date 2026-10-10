@@ -1,0 +1,4 @@
+{
+ "_note": "OPTIONNEL. Copie ce fichier a la racine du projet. Jeton gratuit : sketchfab.com > Settings > Password & API > API Token. Ne mets jamais ce fichier dans un depot PUBLIC (le jeton se revoque a tout moment sur la meme page).",
+ "sketchfab": "COLLE_TON_JETON_ICI"
+}

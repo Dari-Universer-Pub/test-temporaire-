@@ -1,0 +1,24 @@
+{
+ "id": "10_corail",
+ "_famille": "vegetal",
+ "_brief": "Corail branchu rose, sans feuilles.",
+ "modelage": {
+  "gabarit": "arbre",
+  "reglages": {
+   "couleur": "#e0743a",
+   "feuilles": 0,
+   "feuillage": "#e0743a",
+   "branches": 4,
+   "angle": 30,
+   "niveaux": 3
+  }
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 48,
+ "_galerie": "decors"
+}

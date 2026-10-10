@@ -1,0 +1,16 @@
+{
+ "id": "08_maison",
+ "_famille": "architecture",
+ "_brief": "Maison de village : murs clairs, toit rouge, porte.",
+ "modelage": {
+  "gabarit": "maison"
+ },
+ "animations": {
+  "f": {
+   "images": 1
+  }
+ },
+ "vue": "trois_quarts",
+ "taille_px": 72,
+ "_galerie": "decors"
+}
